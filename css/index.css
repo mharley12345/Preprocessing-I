@@ -21,6 +21,11 @@ th {
 .nav {
   text-align: center;
   width: 100%;
+  word-spacing: 1em;
+  background-color: black;
+  animation-name: changebackground;
+  animation-iteration-count: infinite;
+  animation-duration: 30s;
 }
 .nav a {
   display: inline-block;
@@ -28,6 +33,65 @@ th {
   text-decoration: none;
   color: #FF0000;
   font-size: 35px;
+  word-spacing: 1em;
+  animation-name: change;
+  animation-iteration-count: infinite;
+  animation-duration: 30s;
+}
+@keyframes change {
+  5% {
+    color: black;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: white;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: #FF0000;
+  }
+}
+@keyframes changebackground {
+  5% {
+    background-color: white;
+  }
+  25% {
+    background-color: #FF0000;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: #FF0000;
+  }
+  100% {
+    background-color: black;
+  }
+}
+.intro {
+  display: flex;
+  background-color: #FF0000;
+  color: white;
+  text-align: center;
+}
+.intro img {
+  width: 50%;
+  height: 50%;
+}
+.intro header {
+  position: relative;
+  left: 200px;
+  top: 175px;
+}
+.skills {
+  text-align: center;
+}
+.skills h2 {
+  text-decoration: underline;
 }
 .workhistory {
   display: flex;
