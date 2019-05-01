@@ -52,16 +52,13 @@ table {
 * {
     box-sizing: border-box;
 }
-@make-red: #FF0000;
-@make-bigger: 90px;
+
 html, body {
 	height: 100%;
-	background:@make-red; // #FF0000
 }
-h1 {
-	font-size: @make-bigger; //90px
-
+.border {
+	border: 4px dashed #333333;
 }
-
-
-
+footer {
+	.border();
+}
