@@ -74,6 +74,7 @@ h2, th {
 		 animation-iteration-count: infinite;
 		 animation-duration: 60s;
 	
+	
 	 }
       @keyframes change {
 		5% {color: @thbrcolor}
@@ -89,7 +90,9 @@ h2, th {
 			50% {background-color: gold;}
 			75% {background-color: @thbrcolor;}
 			100% {background-color: @thbrcolor;}
-		  }
+			}
+			
+		
 
 		
 		  
@@ -98,17 +101,27 @@ h2, th {
 	display: flex;
 	background-color:@thbrcolor;
 	color: white;
-	text-align: center;
+	align-content: center;
+	justify-content: space-around;
+	flex-direction: column;
+	flex-wrap: wrap; 
+	
 	
       img {
-		  width: 40%;
-		  height: 40%;
+		  width: 400px;
+		  height: 300px;
 		
 	  }
 	  header {
-		  position: relative;
+		  /*position: relative;
 		  left: 225px;
-		  top: 125px;
+			top: 125px;*/
+			display: flex;
+			align-items: center;
+			justify-items: center;
+			flex-wrap: nowrap;
+			flex-direction: row;
+
 	}
 }
 .skills {
@@ -221,14 +234,76 @@ footer {
 	background: @trbrcolor;
 }
 /* <-------------------------------- @media ------------------------------------------>*/
-@media (max-width: 500px) {
-	body {
-		.media500;
-	nav {
-		.media500;
-	}
-	header {
-		.media500;
-	}
-}
-}
+@media (max-width: 499px) {
+
+
+																						body {
+																							width:475px;
+																							display: flex;
+																							flex-direction: row;
+																							flex-wrap: wrap;
+																							
+
+																								.nav {
+																									max-width: 100%;
+																									color:black;
+																									background: #FF0000;
+																									font-size: 15px;
+																								padding-right: 25px;
+																									a {
+																										font-size: 16px;
+																										text-align: left;
+																									
+																									
+																									
+																									.intro header {
+																									display: inline;
+																									
+																									img {
+																									width: 100%;
+																									padding-top:10%;
+																								
+																									
+																									
+																								
+																							
+																								}}}}
+																								.skills {
+																									position: relative;
+																									left:0%;
+																									top:0%;
+																									color:@thbrcolor;
+																									background: @trbrcolor;
+																									height: 350px;
+																								
+																								a {
+																									color:@thbrcolor;
+																								
+																							}}
+																							.workhistory {
+																								position: relative;
+																								left:0%;
+																								bottom:0%;
+																								height: 350px;
+
+																								h2 {
+																									background: @thbrcolor;
+																									margin: 1%;
+																									font-size: 46px;
+																								
+																							}
+																						
+																												
+
+																					
+																							}
+																						}
+																					.contact {
+																						display: none;
+																					}
+																					footer {
+																						width:100%;
+																					}
+																				}
+																				
+																			

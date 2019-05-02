@@ -99,16 +99,24 @@ th {
   display: flex;
   background-color: #FF0000;
   color: white;
-  text-align: center;
+  align-content: center;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .intro img {
-  width: 40%;
-  height: 40%;
+  width: 400px;
+  height: 300px;
 }
 .intro header {
-  position: relative;
-  left: 225px;
-  top: 125px;
+  /*position: relative;
+		  left: 225px;
+			top: 125px;*/
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 .skills {
   width: 800px;
@@ -204,20 +212,57 @@ footer {
   background: #0a0a0a;
 }
 /* <-------------------------------- @media ------------------------------------------>*/
-@media (max-width: 500px) {
+@media (max-width: 499px) {
   body {
-    width: 400px;
+    width: 475px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
-  body nav {
-    width: 400px;
-    display: flex;
-    flex-wrap: wrap;
+  body .nav {
+    max-width: 100%;
+    color: black;
+    background: #FF0000;
+    font-size: 15px;
+    padding-right: 25px;
   }
-  body header {
-    width: 400px;
-    display: flex;
-    flex-wrap: wrap;
+  body .nav a {
+    font-size: 16px;
+    text-align: left;
+  }
+  body .nav a .intro header {
+    display: inline;
+  }
+  body .nav a .intro header img {
+    width: 100%;
+    padding-top: 10%;
+  }
+  body .skills {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    color: #FF0000;
+    background: #0a0a0a;
+    height: 350px;
+  }
+  body .skills a {
+    color: #FF0000;
+  }
+  body .workhistory {
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+    height: 350px;
+  }
+  body .workhistory h2 {
+    background: #FF0000;
+    margin: 1%;
+    font-size: 46px;
+  }
+  .contact {
+    display: none;
+  }
+  footer {
+    width: 100%;
   }
 }
