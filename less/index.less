@@ -11,8 +11,15 @@ html, body {
 @medium: 35px;
 @smaller: 15px;
 @thbrcolor: #FF0000;
-@trbrcolor: rgba(122, 125, 126, 0.637);
+@trbrcolor: rgb(10, 10, 10);
 @border: 1px solid black;
+.center {
+	position: relative;
+		  left: 25%;
+		  top: 0%;
+	
+}
+
 body {
 	max-width: 100%;
 }
@@ -45,7 +52,7 @@ h2, th {
 		 word-spacing: 1em;
 		 animation-name: change;
 		 animation-iteration-count: infinite;
-		 animation-duration: 30s;
+		 animation-duration: 60s;
 	 }
       @keyframes change {
 		5% {color: black;}
@@ -73,51 +80,70 @@ h2, th {
 	text-align: center;
 	
       img {
-		  width: 50%;
-		  height: 50%;
+		  width: 40%;
+		  height: 40%;
 		
 	  }
 	  header {
 		  position: relative;
-		  left: 200px;
-		  top: 175px;
+		  left: 225px;
+		  top: 125px;
 	}
 }
 .skills {
-	text-align: center;
+        width: 800px;
+		height: 300px;
+		.center();
 	h2 {
 		text-decoration: underline;
-}
-}
+		font-size: 40px;
+		text-align: center;
+
+
+	}
+	p {
+		font-size: 20px;
+	}
+
+	
+		
+	}
+
 
     
-	
-
-
-
-
-
-
-
-
-
-
 .workhistory {
-	display: @flex;
+	  .center();
+	  width: 800px;
+	  height: 300px;
+	  
 	h2 {
-		align-self: center;
-		flex-wrap: wrap;
+		text-align: center;
+		font-size: 40px;
+		text-decoration: underline;
 	}
 		table {
-		display: @flex;
-		flex-wrap: nowrap;
+		
+	   
 		border: @border;
-		align-content: center;
 			th {
 				background-color: @thbrcolor;
+				width:33.33%;
+			
 			}
 			tr {
 				background-color: @trbrcolor;
+				width: 33.33%;
+			td {
+			
+				font-size: 18px;
+				color: @thbrcolor;
+			#one {
+				
+				text-decoration: underline;
+			}
+		
+		}
+			
 }	}	}	
 
 
