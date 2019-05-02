@@ -1,11 +1,6 @@
 
-* {
-    box-sizing: border-box;
-}
 
-html, body {
-    height: 100%;
-}
+/* <---------------------------------- Vars -------------------------------------> */
 @flex: flex;
 @bigger: 70px;
 @medium: 35px;
@@ -13,6 +8,13 @@ html, body {
 @thbrcolor: #FF0000;
 @trbrcolor: rgb(10, 10, 10);
 @border: 1px solid black;
+/* <-------------------------------- Mixins ------------------------------------> */
+.media500 {
+	width: 400px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .center {
 	position: relative;
 		  left: 25%;
@@ -22,6 +24,14 @@ html, body {
 	position: relative;
 	width:800px;
 	left: 25%;
+}
+    /* <------------------------------ Start Css ----------------------------------> */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
 }
 
 body {
@@ -49,7 +59,9 @@ h2, th {
 	z-index: 10;
 	
 	
-	
+	#two {
+		word-spacing: .10em;
+	}
 
 	 a {
 		 display: inline-block;
@@ -208,4 +220,15 @@ footer {
 	text-align: center;
 	background: @trbrcolor;
 }
-
+/* <-------------------------------- @media ------------------------------------------>*/
+@media (max-width: 500px) {
+	body {
+		.media500;
+	nav {
+		.media500;
+	}
+	header {
+		.media500;
+	}
+}
+}

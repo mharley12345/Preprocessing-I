@@ -1,9 +1,9 @@
-* {
-  box-sizing: border-box;
-}
-html,
-body {
-  height: 100%;
+/* <---------------------------------- Vars -------------------------------------> */
+/* <-------------------------------- Mixins ------------------------------------> */
+.media500 {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .center {
   position: relative;
@@ -14,6 +14,14 @@ body {
   position: relative;
   width: 800px;
   left: 25%;
+}
+/* <------------------------------ Start Css ----------------------------------> */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
 }
 body {
   max-width: 100%;
@@ -38,6 +46,9 @@ th {
   animation-duration: 60s;
   position: fixed;
   z-index: 10;
+}
+.nav #two {
+  word-spacing: 0.1em;
 }
 .nav a {
   display: inline-block;
@@ -191,4 +202,22 @@ footer {
   color: #FF0000;
   text-align: center;
   background: #0a0a0a;
+}
+/* <-------------------------------- @media ------------------------------------------>*/
+@media (max-width: 500px) {
+  body {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body nav {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body header {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
