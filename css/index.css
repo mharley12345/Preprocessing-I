@@ -30,7 +30,8 @@ th {
   background-color: black;
   animation-name: changebackground;
   animation-iteration-count: infinite;
-  animation-duration: 30s;
+  animation-duration: 60s;
+  position: fixed;
 }
 .nav a {
   display: inline-block;
@@ -45,36 +46,36 @@ th {
 }
 @keyframes change {
   5% {
-    color: black;
+    color: #FF0000;
   }
   25% {
-    color: yellow;
+    color: #FF0000;
   }
   50% {
     color: white;
   }
   75% {
-    color: green;
+    color: #0a0a0a;
   }
   100% {
-    color: #FF0000;
+    color: #0a0a0a;
   }
 }
 @keyframes changebackground {
   5% {
-    background-color: white;
+    background-color: #0a0a0a;
   }
   25% {
-    background-color: #FF0000;
+    background-color: #0a0a0a;
   }
   50% {
-    background-color: green;
+    background-color: gold;
   }
   75% {
     background-color: #FF0000;
   }
   100% {
-    background-color: black;
+    background-color: #FF0000;
   }
 }
 .intro {
@@ -136,4 +137,9 @@ th {
 }
 .workhistory table tr td #one {
   text-decoration: underline;
+}
+footer {
+  color: #FF0000;
+  text-align: center;
+  background: #0a0a0a;
 }
