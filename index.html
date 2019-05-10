@@ -1,19 +1,107 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head> 
+      <title>My Resume</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
 
-  <title>My Resume</title>
+  <body> 
+   
+    <!--Nav-->
+      <section class="nav">
+        <nav>
+            
+              <a href="#intro">Intro</a>
+              <a href="#skills">Skills</a>
+              <a  id ="two" href="#workhistory">Work History</a>
+              <a href="#contact">Contact</a>
+            
+        </nav>
+      </section>
+      <hr />
+    
+    
+    <!--intro-->
+    <section class="intro">
+       
+      <header>
+          <img src="images\mugshot.jpg" alt="Picture Of Mike">
+          <br>
+          <h1>Mike Harley</h1>
+          
+      </header>
+     </section>
+     <hr />
+    
+    <!-- Skills -->
+    <section class="skills">
+      <h2>About Me</h2>
+      <p>I am currently a student at <a href="https://lambdaschool.com"> Lambda School</a>. I am studying <strong> Full Stack Web Development</strong></p><p>I am a hard worker and usually a quicker learner.</p><p>I am serious when it comes to getting the job done but also have a sense of humor</p><p>I can legally and skillfully drive any vechile on the road.</p>
 
-  <link rel="stylesheet" href="css/index.css">
+    </section>
+    <hr />
+    
+    <!-- Work History -->
+    <section class="workhistory">
+      <h2>Postions I've Held</h2>
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Position</th>
+                <th>Dates</th>
+              </tr>
+              <tr>
+                <td><a id="one">Lambda School</a></td>
+                <td>Student / Full Stack Web Development</td>
+                <td>April 2019 - Present</td>
+              </tr>
+              <tr>
+                <td><a id="one">Prima Express</a></td>
+                <td>Truck Driver / Driver Trainer</td>
+                <td>November 2013 - April 2017</td>
+              </tr>
+              <tr>
+                <td><a id="one">Harley Xpress</a></td>
+                <td>Owner Operator</td>
+                <td>February 2015 - June 2016 </td>
+              </tr>
+              </table>
+    </section>
+    <hr  />
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+    <!-- Contact-->
+    <section class="contact">
+       
+        
+            <form action="action_page.php">
+                <h2>Contact Me</h2>
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="email">Email</label>
+              <input type="text" id="email" name="Email" placeholder="Your Email.."> 
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px; width: 800px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+         
+    </section>
+    <footer>
+      <p>&copy;Mike Harley 2019</p>
 
-<body>
-  <h1>My Resume</h1>
-</body>
+            
+
+  
+      
+  </body>
 </html>

@@ -1,1 +1,268 @@
-/* Compile your LESS file! */
+/* <---------------------------------- Vars -------------------------------------> */
+/* <-------------------------------- Mixins ------------------------------------> */
+.media500 {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.center {
+  position: relative;
+  left: 25%;
+  top: 0%;
+}
+.form-center {
+  position: relative;
+  width: 800px;
+  left: 25%;
+}
+/* <------------------------------ Start Css ----------------------------------> */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  max-width: 100%;
+}
+h1 {
+  font-size: 70px;
+}
+p {
+  font-size: 15px;
+}
+h2,
+th {
+  font-size: 35px;
+}
+.nav {
+  text-align: center;
+  width: 100%;
+  word-spacing: 1em;
+  background-color: black;
+  animation-name: changebackground;
+  animation-iteration-count: infinite;
+  animation-duration: 60s;
+  position: fixed;
+  z-index: 10;
+}
+.nav #two {
+  word-spacing: 0.1em;
+}
+.nav a {
+  display: inline-block;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #FF0000;
+  font-size: 35px;
+  word-spacing: 1em;
+  animation-name: change;
+  animation-iteration-count: infinite;
+  animation-duration: 60s;
+}
+@keyframes change {
+  5% {
+    color: #FF0000;
+  }
+  25% {
+    color: #FF0000;
+  }
+  50% {
+    color: white;
+  }
+  75% {
+    color: #0a0a0a;
+  }
+  100% {
+    color: #0a0a0a;
+  }
+}
+@keyframes changebackground {
+  5% {
+    background-color: #0a0a0a;
+  }
+  25% {
+    background-color: #0a0a0a;
+  }
+  50% {
+    background-color: gold;
+  }
+  75% {
+    background-color: #FF0000;
+  }
+  100% {
+    background-color: #FF0000;
+  }
+}
+.intro {
+  display: flex;
+  background-color: #FF0000;
+  color: white;
+  align-content: center;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.intro img {
+  width: 400px;
+  height: 300px;
+}
+.intro header {
+  /*position: relative;
+		  left: 225px;
+			top: 125px;*/
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.skills {
+  width: 800px;
+  height: 300px;
+  position: relative;
+  left: 25%;
+  top: 0%;
+}
+.skills h2 {
+  text-decoration: underline;
+  font-size: 40px;
+  text-align: center;
+}
+.skills p {
+  font-size: 20px;
+}
+.workhistory {
+  position: relative;
+  left: 25%;
+  top: 0%;
+  width: 800px;
+  height: 300px;
+  opacity: 100;
+}
+.workhistory h2 {
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.workhistory table {
+  border: 1px solid black;
+}
+.workhistory table th {
+  background-color: #FF0000;
+  width: 33.33%;
+}
+.workhistory table tr {
+  background-color: #0a0a0a;
+  width: 33.33%;
+}
+.workhistory table tr td {
+  font-size: 18px;
+  color: #FF0000;
+}
+.workhistory table tr td #one {
+  text-decoration: underline;
+}
+.contact {
+  border: 2px solid red;
+  background: gray;
+}
+.contact h2 {
+  font-size: 40px;
+  text-decoration: underline;
+  text-align: center;
+}
+.contact form {
+  position: relative;
+  width: 800px;
+  left: 25%;
+}
+.contact input[type=text],
+.contact select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.contact input[type=submit] {
+  width: 100%;
+  background-color: #0a0a0a;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact input[type=submit]:hover {
+  background-color: #FF0000;
+}
+.contact div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+footer {
+  color: #FF0000;
+  text-align: center;
+  background: #0a0a0a;
+}
+/* <-------------------------------- @media ------------------------------------------>*/
+@media (max-width: 499px) {
+  body {
+    width: 475px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  body .nav {
+    max-width: 100%;
+    color: black;
+    background: #FF0000;
+    font-size: 15px;
+    padding-right: 25px;
+  }
+  body .nav a {
+    font-size: 16px;
+    text-align: left;
+  }
+  body .nav a .intro header {
+    display: inline;
+  }
+  body .nav a .intro header img {
+    width: 100%;
+    padding-top: 10%;
+  }
+  body .skills {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    color: #FF0000;
+    background: #0a0a0a;
+    height: 350px;
+  }
+  body .skills a {
+    color: #FF0000;
+  }
+  body .workhistory {
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+    height: 350px;
+  }
+  body .workhistory h2 {
+    background: #FF0000;
+    margin: 1%;
+    font-size: 46px;
+  }
+  .contact {
+    display: none;
+  }
+  footer {
+    width: 100%;
+  }
+}
